@@ -1,0 +1,77 @@
+.ls-main-footer {
+    padding: 0 @large-screen-side-padding;
+    display: table-row;
+    .ls-main-footer-inner {
+        padding: 30px 0 20px;
+        display: table;
+        margin: auto;
+        max-width: @page-max-width;
+        margin: auto;
+        text-align: center;
+    }
+    .ls-main-footer-table-cell {
+        display: inline-block;
+        vertical-align: middle;
+        border-right: 1px solid @grey-border-1;
+        margin-bottom: 10px;
+        &:last-of-type {
+            border-right: none;
+        }
+    }
+    .ls-main-footer-text {
+        display: block;
+        padding: 0 10px;
+        color: @blue-font-color-1;
+    }
+    a.ls-main-footer-text:hover {
+        color: @blue-font-color-2;
+        text-decoration: underline;
+    }
+}
+
+
+/*==========  Responsive  ==========*/
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {
+    .ls-main-footer {
+        .ls-main-footer-inner {
+            padding: 15px 0;
+            display: table;
+            max-width: 1200px;
+            margin: auto;
+        }
+    }
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
+    .ls-main-footer {
+        .ls-main-footer-table-cell {
+            display: block;
+            border-right: 0px solid @grey-border-1;
+            &:last-of-type {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {}

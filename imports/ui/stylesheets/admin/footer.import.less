@@ -1,0 +1,26 @@
+.ls-admin-footer{
+	display:table-row;
+	padding: 0px @large-screen-side-padding;
+	.ls-admin-footer-inner{
+		padding: 30px 0;
+		display: table;
+		margin: auto;
+	}
+	.ls-admin-footer-table-cell{
+		display: table-cell;
+		vertical-align: middle;
+		border-right: 1px solid @grey-border-1;
+		&:last-of-type{
+			border-right: none;
+		};
+	}
+	.ls-admin-footer-text{
+		display: block;
+		padding: 0 10px;
+		color: @blue-font-color-1;
+	}
+	a.ls-admin-footer-text:hover{
+		color: @blue-font-color-2;
+		text-decoration: underline;
+	}
+}

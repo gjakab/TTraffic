@@ -1,0 +1,41 @@
+.ls-admin-add-blogpost {  
+    .ls-post-image-inner{
+        position: relative;
+        overflow: hidden;
+        &:hover .ls-image-buttons{
+    		top: 0;
+    	}
+
+    }
+    .ls-image-buttons{
+    	position: absolute;
+    	background: #fff;
+    	opacity: 0.75;
+    	font-size: 1rem;
+    	padding: 5px;
+    	right: 0;
+    	top: -56px;
+    	.transition(top .3s);
+    	i{
+			cursor: pointer;
+    	}
+    }
+    .ls-right-column-upper{
+    	padding-bottom: 73px;
+        .button{
+            i{
+                color: #fff;
+            }
+        }
+    }
+    .ls-add-tag-button{
+        cursor: pointer;
+    }
+    .ls-post-image{
+        padding-bottom: 2rem;
+    }
+    .mce-tinymce{
+        border: 1px solid rgba(34, 36, 38, 0.15);
+        border-radius: 0.28571429rem;
+    }
+}

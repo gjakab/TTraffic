@@ -1,0 +1,136 @@
+.ls-main-sidebar {
+    padding-left: 25px;
+    .ls-main-sidebar-inner {
+        &>div {
+            background: #fff;
+            .box-shadow(@post-shadow);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    }
+    .ls-search-wrapper {
+        display: table;
+        width: 100%;
+        border: 1px solid @grey-border-2;
+        margin-bottom: 20px;
+        .ls-search-left-cell {
+            display: table-cell;
+            vertical-align: top;
+            width: auto;
+        }
+        .ls-search-right-cell {
+            vertical-align: top;
+            display: table-cell;
+            width: 1%;
+        }
+        .ls-searchbar {
+            border: none;
+            width: 100%;
+            padding: 5px 10px;
+            box-sizing: border-box;
+            height: 35px;
+        }
+        .ls-search-button {
+            background: @blue-background-1;
+            font-size: 22px;
+            padding: 6px 13px;
+            cursor: pointer;
+            i {
+                color: #fff;
+            }
+        }
+    }
+    .ls-sidebar-title {
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    .ls-socialize-wrapper {
+        font-size: 0;
+        .ls-socialize-item {
+            font-size: initial;
+            width: 50%;
+            display: inline-block;
+        }
+    }
+    .ls-socialize-item {
+        padding: 0 10px 20px 0;
+    }
+    .ls-socialize-item-inner {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        .ls-socialize-left-cell {
+            display: table-cell;
+            vertical-align: middle;
+            width: 50px;
+            line-height: 50px;
+            text-align: center;
+            font-size: 22px;
+            i {
+                color: #fff;
+            }
+        }
+        .ls-socialize-right-cell {
+            display: table-cell;
+            width: auto;
+            font-size: 0.7rem;
+            padding-left: 5px;
+            vertical-align: middle;
+        }
+        .ls-facebook {
+            background: @facebook-color;
+        }
+        .ls-google {
+            background: @google-color;
+        }
+        .ls-twitter {
+            background: @twitter-color;
+        }
+        .ls-linkedin {
+            background: @linkedin-color;
+        }
+    }
+    .ls-main-most-viewed {
+        .ls-main-most-viewed-item {
+            margin-bottom: 15px;
+            overflow: hidden;
+            height: 38px;
+        }
+        .ls-main-most-viewed-item:last-of-type {
+            margin-bottom: 0;
+        }
+        .ls-main-most-viewed-item-inner {
+            display: table;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            .ls-left-col {
+                display: table-cell;
+                vertical-align: middle;
+                overflow: hidden;
+                width: 60px;
+                img {
+                    width: 115%;
+                    margin: -10px -5px;
+                }
+            }
+            .ls-right-col {
+                display: table-cell;
+                vertical-align: middle;
+                width: auto;
+                font-size: 0.9rem;
+                padding-left: 5px;
+                line-height: 1.2rem;
+            }
+        }
+    }
+    .ls-main-sidebar-inner {
+        .ls-main-sidebar-ad {
+            padding: 0;
+            font-size: 0;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,193 @@
+.ls-main-header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    background: #fff;
+    .box-shadow(@header-shadow);
+    .ls-main-header-inner {
+        display: table;
+        width: 100%;
+        height: 62px;
+        margin: auto;
+    }
+    .ls-table-cell {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .ls-logo-section {
+        width: 1%;
+    }
+    .ls-top-nav {
+        width: auto;
+    }
+    .ls-login-section {
+        width: 1%;
+        a {
+            display: table;
+            padding: 0 @large-screen-side-padding;
+            height: 50px;
+        }
+        .ls-login-icon-wrapper {
+            font-size: 24px;
+        }
+        .ls-login-text-wrapper {
+            white-space: nowrap;
+            font-size: 1rem;
+            padding-left: 5px;
+        }
+        &:hover {
+            background: @grey-background-1;
+            .ls-login-icon,
+            .ls-login-text-wrapper {
+                color: #fff;
+            }
+        }
+    }
+    .ls-logo-link {
+        padding: 0 10px;
+        display: table;
+        vertical-allign: middle;
+    }
+    .ls-logo-wrapper {
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 0;
+    }
+    .ls-name-wrapper {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .ls-logo {
+        width: 120px;
+    }
+    .ls-name {
+        display: inline-block;
+        padding-left: 10px;
+        font-size: 1.2rem;
+        font-weight: 500;
+        white-space: nowrap;
+    }
+    .ls-top-nav-inner {
+        display: table;
+        margin: 0 0 0 auto;
+        padding-right: 10px;
+    }
+    .ls-top-nav-section {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        .ls-top-nav-link {
+            display: block;
+            padding: 17px 20px;
+            box-sizing: border-box;
+            text-transform: uppercase;
+            height: 62px;
+            line-height: 1.5;
+            &:hover {
+                color: #fff;
+                background: @grey-background-1;
+            }
+        }
+    }
+    .ls-menu-button {
+        display: none;
+        margin-right: 20px;
+        cursor: pointer;
+        i {
+            margin: 0;
+        }
+    }
+}
+
+.ls-main-sidebar.sidebar {
+    padding: 0px 10px;
+    background: #fff;
+    .ls-menu-sidebar {
+        .ls-top-nav-link {
+            display: block;
+            padding: 10px 0;
+            text-transform: uppercase;
+        }
+    }
+    .ls-main-search {
+        .ls-sidebar-title {
+            display: none;
+        }
+    }
+    .ls-socialize-wrapper .ls-socialize-item {
+        width: 25%;
+    }
+    .ls-socialize-item-inner .ls-socialize-right-cell {
+        display: none;
+    }
+    .ls-menu-sidebar {
+        border-bottom: 1px solid @grey-border-1;
+        margin-bottom: 15px;
+    }
+    .ls-main-search {
+        padding-bottom: 15px;
+        border-bottom: 1px solid @grey-border-1;
+        margin-bottom: 15px;
+        .ls-search-wrapper {
+            margin-bottom: 0;
+        }
+    }
+    .ls-main-most-viewed {
+        padding-bottom: 15px;
+    }
+}
+
+
+/*==========  Responsive  ==========*/
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {
+    .ls-main-header {
+        .ls-top-nav-section {
+            .ls-top-nav-link {
+                padding: 17px 10px;
+            }
+        }
+    }
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+    .ls-main-header {
+        .ls-menu-button {
+            display: inline-block;
+        }
+        .ls-top-nav {
+            text-align: right;
+        }
+        .ls-top-nav-inner {
+            display: none;
+        }
+        .ls-logo-link {
+            padding: 0 15px;
+        }
+        .ls-menu-button {
+            margin-right: 15px;
+        }
+    }
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {}

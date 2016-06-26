@@ -1,0 +1,57 @@
+.ls-main-layout {
+    background: @main-background-color;
+    .ls-main-content {
+        display: table-row;
+        height: 100%;
+    }
+    .ls-main-content-inner {
+        padding: 0 @large-screen-side-padding;
+        max-width: @page-max-width;
+        margin: auto;
+    }
+    .ls-main-layout-inner {
+        width: 100%;
+        padding-top: 75px;
+        display: table;
+        min-height: 100vh;
+    }
+}
+
+
+/*==========  Responsive  ==========*/
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+    .ls-main-layout {
+        .ls-main-content-inner {
+            padding: 0 15px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .ls-main-layout-inner {
+            padding-top: 65px;
+        }
+    }
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {}
