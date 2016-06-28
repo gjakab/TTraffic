@@ -35,3 +35,25 @@ Telugu traffic is written on Meteor framework (1.3.3). Uses React.js and Semanti
   production server). Run the following command in project root folder
   
     mup deploy
+    
+  if you don't have mup installed, run the following command
+  
+    sudo npm install -g mup
+    
+    
+4. Server
+  
+  The app is loacted in "/opt/telugutraffic" on server. Run the following command to navigate to root folder
+
+    cd /opt/telugutraffic
+    
+  for accessing the database run the following command
+  
+    mongo meteor
+    
+  this will start mongo shell. Database can be reset from here by running the following command
+  
+    db.dropDatabase()
+    
+  !Important
+    Make sure to backup the data before running this command, or the data will be lost permanently
